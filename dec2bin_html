@@ -1,0 +1,12 @@
+<b>Insert Decimal Number: </b><input type = "text" name = "deci" id = "deci" size = "15" maxlength = "15" />
+<input type="button" value="Convert!" onclick="dec2bin()" />
+<br><br>
+<div id = "result"></div>
+
+<script type = "text/javascript">
+
+function dec2bin() {
+var x = document.getElementById("deci").value;
+if ((/[^0-9]/g.test(x)) || x == "") {
+alert ("You must enter an integer decimal number!");
+document.getElementById("deci").value = "";
